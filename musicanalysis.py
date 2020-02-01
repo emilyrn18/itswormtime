@@ -1,33 +1,41 @@
 import librosa as lr
-import turtle as tle
+import turtle 
 import random
 
+def draw_beats(tur, item ):
+    tur.forward(item)
+    tur.left(10)
+    tur.forward(10)
+    tur.left(10)
+    tur.backward(item)
+    tur.left(10)
+    tur.forward(10)
+    tur.left(10)
+    tur.circle(item, 30)
+
 dst = 'sherlockr.wav'
-random = dst
+#random = dst
 
 y , sr = lr.load(dst)
-p = lr.beat.beat_track(y=y)
-
+tempo, beats = lr.beat.beat_track(y=y)
+#print(len(tempo[1]), tempo)
+print(tempo)
 #harmonics
 har = lr.effects.harmonic(y=y)
-har1 = tle.Turtle()
+#har1 = tle.Turtle()
 #har1.speed(0)
-har1.color('red')
+#har1.color('red')
 
 #percussions
-per = lr.effects.percussive
-per1 = tle.Turtle()
+#per = lr.effects.percussive
+#per1 = tle.Turtle()
 #per1.speed(0)
-per1.color('orange')
+#per1.color('orange')
 
 #drawing 
-for item in p[1]:
-    har1.forward(item)
-    har1.left(10)
-    per1.forward(10)
-    tle.left(10)
-    tle.backward(item)
-    tle.left(10)
-    tle.forward(10)
-    tle.left(10)
-    tle.circle(item, 30)
+ben = turtle.Turtle()
+ben.speed(tempo)
+for item in beats:
+    draw_beats(ben, item)
+    #print(item)
+
