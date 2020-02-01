@@ -4,7 +4,7 @@ It's Worm Time is a program that uses music from Spotify to generate art using f
 ## Getting Started
 
 To start working on this project you will first want to make sure you have VSCode and you have installed the python extension and have it enabled. Here is the VSCode installing link: https://code.visualstudio.com/
-You will also want to download GitBash: https://gitforwindows.org/
+<br>You will also want to download GitBash: https://gitforwindows.org/
 
 In git bash install Spotipy and libROSA by typing these commands into the command prompt and pressing ENTER one at a time:
 
