@@ -52,16 +52,16 @@ print(track)
 artist = track['item']['artists'][0]['name']
 track = track['item']['name']
 
-if artist != "":
+if (len(artist) > 0):
     print("Currently playing " + artist + " - " + track)
 
 # Analyze current track
 
 
 # Spotify interactivity
-choice = 0
+choice = "0"
 
-while choice not 1:
+while choice == "0":
 
     print()
     print(">>> Welcome to Spotify " + username + " :)")
