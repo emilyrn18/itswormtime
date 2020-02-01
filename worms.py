@@ -1,7 +1,9 @@
+# Imports
 import spotipy
 import spotipy.util as util
 from spotipy.oauth2 import SpotifyClientCredentials
 
+# Connects to  Client ID, SECRET, and username
 cid = '<INSERT CLIENT ID>'
 secret = '<INSERT CLIENT SECRET>'
 username = ""
