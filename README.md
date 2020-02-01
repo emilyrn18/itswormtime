@@ -23,7 +23,7 @@ Here are the steps to cloning:
 # Commands to Remember for github
 
 git pull
-git status
-git add .
-git commit -m "place your comment here"
-git push
+<br>git status
+<br>git add .
+,br>git commit -m "place your comment here"
+<br>git push
