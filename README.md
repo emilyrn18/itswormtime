@@ -34,3 +34,6 @@ Main Spotify for Developers site: https://developer.spotify.com/community/showca
 <br>A light weight Python library for the Spotify Web API: https://github.com/plamere/spotipy
 <br>Getting Started with Spotipy: https://spotipy.readthedocs.io/en/2.7.1/
 <br>App for Inspiration: https://spotipy.readthedocs.io/en/2.7.0/
+<br>Spotipy Features: https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/
+<br>Spotipy Analysis: https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-analysis/
+<br>Spotipy Currently Playing Track: https://developer.spotify.com/documentation/web-api/reference/player/get-the-users-currently-playing-track/
