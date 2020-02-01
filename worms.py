@@ -1,4 +1,6 @@
 # Import libraries
+import turtle
+import random
 import os
 import sys
 import json
@@ -58,7 +60,7 @@ if (len(artist) > 0):
 
 # Analyze current track
 soundData = spotifyObject.audio_analysis(trackID)
-print(json.dumps(soundData, sort_keys=True, indent=4))
+# print(json.dumps(soundData, sort_keys=True, indent=4))
 
 # Spotify interactivity
 choice = "0"
@@ -68,30 +70,53 @@ while choice == "0":
     print()
     print(">>> Welcome to Spotify " + username + " :)")
     print()
-    print("0 - Search for an artist")
+    print("0 - play with turtle")
     print("1 - exit")
     print()
     choice = input("Enter your choice: ")
 
     # Search for artist
     if choice == "0":
-        print()
-        searchQuery = input("Ok, what's their name?:")
-        print()
 
-        # Get search results
-        searchResults = spotifyObject.search(searchQuery, 1, 0, "artist")
+        # pitches = soundData['segments'][0]['pitches']
+        segs = soundData['segments']
+        # Hard coded values
+        benny = turtle.Turtle()
+        # tempo = soundData['track']['tempo']
+        # dance = soundData['']
+        for pies in segs:
+            pitches = pies['pitches']
 
-        # Print artist details
-        artist = searchResults['artists']['items'][0]
-        print(artist['name'])
-        print(str(artist['followers']['total']) + " followers")
-        print(artist['genres'][0])
-        print()
-        webbrowser.open(artist['images'][0]['url'])
-        artistID = artist['id']
+            benny.speed(7)
+            benny._pensize = 5
 
-        # Album details
-        trackURIs = []
-        trackArt = []
-        z = 0
+            for p in pitches:
+                # num = p*2
+                benny.pencolor(random.randint(0, 255)/255,
+                               random.randint(0, 255)/255, random.randint(0, 255)/255)
+                benny.forward(p*100)
+                benny.penup()
+                benny.backward(p*100)
+                benny.left(10)
+                benny.pendown()
+
+        # print()
+        # searchQuery = input("Ok, what's their name?:")
+        # print()
+
+        # # Get search results
+        # searchResults = spotifyObject.search(searchQuery, 1, 0, "artist")
+
+        # # Print artist details
+        # artist = searchResults['artists']['items'][0]
+        # print(artist['name'])
+        # print(str(artist['followers']['total']) + " followers")
+        # print(artist['genres'][0])
+        # print()
+        # webbrowser.open(artist['images'][0]['url'])
+        # artistID = artist['id']
+
+        # # Album details
+        # trackURIs = []
+        # trackArt = []
+        # z = 0
