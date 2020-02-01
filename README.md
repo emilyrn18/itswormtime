@@ -18,7 +18,7 @@ Here are the steps to cloning:
 1. click the green button that says "Clone or Download" and be sure that you are cloning with HTTPS. Now click the copy button.
 2. Next open up GitBash and type in:    git clone https://github.com/emilyrn18/itswormtime.git
 3. Once it has finished cloning onto your computer you should be able to see a folder called itswormtime in the place you designated
-4. Now type cd itswormtime into GitBash and press enter (You will now be within the repository and folder itswormtime)
+4. Now type cd itswormtime  into GitBash and press enter (You will now be within the repository and folder itswormtime)
 
 # Commands to Remember for github
 
