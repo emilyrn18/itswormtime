@@ -1,5 +1,5 @@
 import librosa as lr
-import turtle as t
+import turtle as tle
 
 
 dst = 'sherlockr.wav'
@@ -7,11 +7,12 @@ dst = 'sherlockr.wav'
 y , sr = lr.load(dst)
 p = lr.beat.beat_track(y=y)
 for item in p[1]:
-    t.forward(item)
-    t.left(10)
-    t.forward(10)
-    t.left(10)
-    t.backward(item)
-    t.left(10)
-    t.forward(10)
-    t.left(10)
+    tle.forward(item)
+    tle.left(10)
+    tle.forward(10)
+    tle.left(10)
+    tle.backward(item)
+    tle.left(10)
+    tle.forward(10)
+    tle.left(10)
+    tle.circle(item)
