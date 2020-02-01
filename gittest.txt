@@ -2,7 +2,7 @@ This is a test. Add your name here to show you
 can push and pull 
 --------------------
 - Muskaan Narula 
-
+- Sarah Osborne
 
 To Get Started, open a Command Prompt and run the 
 following commands 
