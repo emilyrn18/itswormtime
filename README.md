@@ -37,3 +37,6 @@ Main Spotify for Developers site: https://developer.spotify.com/community/showca
 <br>Spotipy Features: https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/
 <br>Spotipy Analysis: https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-analysis/
 <br>Spotipy Currently Playing Track: https://developer.spotify.com/documentation/web-api/reference/player/get-the-users-currently-playing-track/
+<br>Connecting program to spotipy library: https://towardsdatascience.com/profiling-my-favorite-songs-on-spotify-through-clustering-33fee591783d
+
+## LibROSA
