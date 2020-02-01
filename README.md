@@ -9,7 +9,7 @@ You will also want to download GitBash: https://gitforwindows.org/
 In git bash install Spotipy and libROSA by typing these commands into the command prompt and pressing ENTER one at a time:
 
 pip install spotipy
-pip install LibROSA
+<br>pip install LibROSA
 
 Next you will want to clone this repository on your computer in a place you can remember to do this type the command cd Documents or cd Desktop into GitBash. Your gitbash will now be located in either your documents folder or desktop folder. 
 
