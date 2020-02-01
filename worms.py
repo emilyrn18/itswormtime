@@ -1,26 +1,3 @@
-# import os
-# import sys
-# import json
-# import spotipy
-# import webbrowser
-# # This won't import correctly for some reason
-# import spotipy.util as util
-# from json.decoder import JSONDecodeError
-
-# # Gets username from terminal
-# username = sys.argv[1]
-
-# # user ID = 12139911168
-
-
-# try:
-#     token = util.promp_for_user_token(username)
-# except:
-#     os.remove(f".cache-{username}")
-#     token = util.promp_for_user_token(username)
-
-# spotifyObject = spotipy.Spotify(auth=token)
-
 import spotipy
 import spotipy.util as util
 from spotipy.oauth2 import SpotifyClientCredentials
