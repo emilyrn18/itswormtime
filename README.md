@@ -27,3 +27,10 @@ git pull
 <br>git add .
 <br>git commit -m "place your comment here"
 <br>git push
+
+# API's and Other Resources:
+## Spotipy
+Main Spotify for Developers site: https://developer.spotify.com/community/showcase/
+<br>A light weight Python library for the Spotify Web API: https://github.com/plamere/spotipy
+<br>Getting Started with Spotipy: https://spotipy.readthedocs.io/en/2.7.1/
+<br>App for Inspiration: https://spotipy.readthedocs.io/en/2.7.0/
