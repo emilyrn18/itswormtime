@@ -25,5 +25,5 @@ Here are the steps to cloning:
 git pull
 <br>git status
 <br>git add .
-,br>git commit -m "place your comment here"
+<br>git commit -m "place your comment here"
 <br>git push
