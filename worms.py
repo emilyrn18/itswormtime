@@ -1,5 +1,6 @@
 # Import libraries
 import turtle
+import time
 import random
 import os
 import sys
@@ -44,28 +45,29 @@ else:
 
 # grabs available spotify devices
 devices = spotifyObject.devices()
-# 1print(json.dumps(devices, sort_keys=True, indent=4))
+# print(json.dumps(devices, sort_keys=True, indent=4))
 deviceID = devices['devices'][0]['id']
 
-# Get track information
-track = spotifyObject.current_user_playing_track()
-trackID = track['item']['id']
-#print(json.dumps(track, sort_keys=True, indent=4))
-print()
-artist = track['item']['artists'][0]['name']
-track = track['item']['name']
-# print(track['item']['id'])
-if (len(artist) > 0):
-    print("Currently playing " + artist + " - " + track)
-
-# Analyze current track
-soundData = spotifyObject.audio_analysis(trackID)
-# print(json.dumps(soundData, sort_keys=True, indent=4))
 
 # Spotify interactivity
 choice = "0"
 
 while choice == "0":
+
+    # Get track information
+    track = spotifyObject.current_user_playing_track()
+    trackID = track['item']['id']
+    # print(json.dumps(track, sort_keys=True, indent=4))
+    print()
+    artist = track['item']['artists'][0]['name']
+    track = track['item']['name']
+    # print(track['item']['id'])
+    if (len(artist) > 0):
+        print("Currently playing " + artist + " - " + track)
+
+    # Analyze current track
+    soundData = spotifyObject.audio_analysis(trackID)
+    # print(json.dumps(soundData, sort_keys=True, indent=4))
 
     print()
     print(">>> Welcome to Spotify " + username + " :)")
@@ -77,28 +79,46 @@ while choice == "0":
 
     # Search for artist
     if choice == "0":
+        start = time.time()
 
+        time.clock()
         # pitches = soundData['segments'][0]['pitches']
         segs = soundData['segments']
+
+        trackduration = soundData['track']['duration']
+        segduration = soundData['segments'][0]['duration']
         # Hard coded values
         benny = turtle.Turtle()
+        benny.shapesize(0.1, 0.1, 0.1)
         # tempo = soundData['track']['tempo']
         # dance = soundData['']
-        for pies in segs:
-            pitches = pies['pitches']
 
+        print("segduration:")
+        print(segduration)
+        for pies in segs:
+            print()
+            print("trackduration: ")
+            print(time.clock())
+            if trackduration <= time.clock():
+                break
+
+            pitches = pies['pitches']
             benny.speed(7)
             benny._pensize = 5
 
+            pCount = 0
             for p in pitches:
+                if trackduration <= time.clock():
+                    break
                 # num = p*2
                 benny.pencolor(random.randint(0, 255)/255,
                                random.randint(0, 255)/255, random.randint(0, 255)/255)
-                benny.forward(p*100)
+                benny.forward(p*200)
                 benny.penup()
-                benny.backward(p*100)
-                benny.left(10)
+                benny.backward(p*200)
+                benny.left(7)
                 benny.pendown()
+                pCount += 1
 
         # print()
         # searchQuery = input("Ok, what's their name?:")
