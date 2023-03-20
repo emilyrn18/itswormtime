@@ -14,10 +14,10 @@ from spotipy.oauth2 import SpotifyClientCredentials
 # Access token: BQDWkJXMVemN_F9uzDtLLwOeLqWgM3-sR8qphkfS3Zw09aPVA7ZIFn0uNkU_hOjQ2Xn-8nXJwwsj-6Ch1ytJExgInfpc2i5fnRu6oLaQll2gAdDUqeCaj9VMLjqKTfa6mXpYzCLggzAGD8P2cps
 
 # Connects to  Client ID, SECRET, and username
-cid = '5239ca0b44d74a8188734bae8ad6e330'
-secret = '6df461582d434e01bdfb7bba529d9b16'
+cid = ''
+secret = ''
 
-# username = "12139911168"
+# username = "BillyBobJoe"
 username = sys.argv[1]
 
 # applies your client ID and secret
