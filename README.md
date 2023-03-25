@@ -41,4 +41,12 @@ Main Spotify for Developers site: https://developer.spotify.com/community/showca
 <br>
 <br> Song Analysis api: https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-analysis/
 
-## LibROSA
+## How to run
+1. Create login to spotify dev with spotify account credentials
+2. Create an "app", name, and describe it
+3. Then you'll be provided a client ID and a Secret
+4. Clone this code and add your client ID and Secret to their designated variables
+5. Now open command line and navigate to the cloned directory
+6. run    worms.py [INSERT USERNAME HERE]
+7. It will tell you to set your Spotify API Credentials as environment variables. Follow those instructions...or just manually set your user environment variables.
+8. Run   worms.py [INSERT USERNAME HERE]    again
