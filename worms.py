@@ -14,10 +14,10 @@ from spotipy.oauth2 import SpotifyClientCredentials
 # Access token: BQDWkJXMVemN_F9uzDtLLwOeLqWgM3-sR8qphkfS3Zw09aPVA7ZIFn0uNkU_hOjQ2Xn-8nXJwwsj-6Ch1ytJExgInfpc2i5fnRu6oLaQll2gAdDUqeCaj9VMLjqKTfa6mXpYzCLggzAGD8P2cps
 
 # Connects to  Client ID, SECRET, and username
-cid = ''
-secret = ''
+cid = 
+secret = 
 
-# username = "BillyBobJoe"
+# username = "BillyJoel"
 username = sys.argv[1]
 
 # applies your client ID and secret
@@ -81,7 +81,7 @@ while choice == "0":
     if choice == "0":
         start = time.time()
 
-        time.clock()
+        time.process_time()
         # pitches = soundData['segments'][0]['pitches']
         segs = soundData['segments']
 
@@ -98,8 +98,8 @@ while choice == "0":
         for pies in segs:
             print()
             print("trackduration: ")
-            print(time.clock())
-            if trackduration <= time.clock():
+            print(time.process_time())
+            if trackduration <= time.process_time():
                 break
 
             pitches = pies['pitches']
@@ -108,7 +108,7 @@ while choice == "0":
 
             pCount = 0
             for p in pitches:
-                if trackduration <= time.clock():
+                if trackduration <= time.process_time():
                     break
                 # num = p*2
                 benny.pencolor(random.randint(0, 255)/255,
